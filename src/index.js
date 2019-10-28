@@ -7,12 +7,16 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Todo from './components/Todo'
 import Contact from './components/Contact'
+import StateEx from './components/StateEx'
+import Problem from './components/Problem'
 
 ReactDOM.render(<div>
 <Header />
+<Problem />
 <MyInfo />
 <Contact />
 <Todo />
+<StateEx />
 <Footer />
 </div>, document.getElementById('root'));
 
