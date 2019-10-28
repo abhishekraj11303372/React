@@ -9,9 +9,11 @@ import Todo from './components/Todo'
 import Contact from './components/Contact'
 import StateEx from './components/StateEx'
 import Problem from './components/Problem'
+import HandlingEvents from './components/HandlingEvents'
 
 ReactDOM.render(<div>
 <Header />
+<HandlingEvents />
 <Problem />
 <MyInfo />
 <Contact />
