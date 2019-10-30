@@ -10,9 +10,11 @@ import Contact from './components/Contact'
 import StateEx from './components/StateEx'
 import Problem from './components/Problem'
 import HandlingEvents from './components/HandlingEvents'
+import Count from './components/Count'
 
 ReactDOM.render(<div>
 <Header />
+<Count />
 <HandlingEvents />
 <Problem />
 <MyInfo />
