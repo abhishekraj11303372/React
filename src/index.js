@@ -11,9 +11,11 @@ import StateEx from './components/StateEx'
 import Problem from './components/Problem'
 import HandlingEvents from './components/HandlingEvents'
 import Count from './components/Count'
+import FakeComponent from './components/FakeComponent'
 
 ReactDOM.render(<div>
 <Header />
+<FakeComponent />
 <Count />
 <HandlingEvents />
 <Problem />
