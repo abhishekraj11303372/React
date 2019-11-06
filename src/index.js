@@ -12,9 +12,13 @@ import Problem from './components/Problem'
 import HandlingEvents from './components/HandlingEvents'
 import Count from './components/Count'
 import FakeComponent from './components/FakeComponent'
+import Message from './components/Message'
+import Login from './components/Login'
 
 ReactDOM.render(<div>
 <Header />
+<Login />
+<Message />
 <FakeComponent />
 <Count />
 <HandlingEvents />
