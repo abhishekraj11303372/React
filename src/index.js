@@ -14,9 +14,13 @@ import Count from './components/Count'
 import FakeComponent from './components/FakeComponent'
 import Message from './components/Message'
 import Login from './components/Login'
+import Project from './components/Project'
+import Forms from './components/Forms'
 
 ReactDOM.render(<div>
 <Header />
+<Forms />
+<Project />
 <Login />
 <Message />
 <FakeComponent />
