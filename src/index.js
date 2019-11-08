@@ -16,10 +16,14 @@ import Message from './components/Message'
 import Login from './components/Login'
 import Project from './components/Project'
 import Forms from './components/Forms'
+import FormsFullComponent from'./components/FormsFullComponent'
+import CongestedForm from './components/CongestedForm'
 
 ReactDOM.render(<div>
 <Header />
+<FormsFullComponent />
 <Forms />
+<CongestedForm />
 <Project />
 <Login />
 <Message />

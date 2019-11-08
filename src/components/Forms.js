@@ -73,7 +73,7 @@ class Forms extends React.Component{
 
                 <input type="submit" value="submit"/>
                 <br />
-
+                Favourite Color:
                 <select
                     value={this.state.favColor}
                     onChange={this.handleChange}
