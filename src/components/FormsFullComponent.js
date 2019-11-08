@@ -1,6 +1,6 @@
 import React from 'react'
 import FormFullContainer from './FormFullContainer'
-
+//component and container names are interchanged
 class FormFullComponent extends React.Component{
     constructor(){
         super()
@@ -24,7 +24,11 @@ class FormFullComponent extends React.Component{
 
     render(){
         return(
-            <FormFullContainer />
+            <FormFullContainer
+               handleChange={this.handleChange}
+                /*firstName={this.firstName}*/
+                data={this.state}
+                />
         )
     }
 }

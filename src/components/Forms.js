@@ -8,7 +8,8 @@ class Forms extends React.Component{
             lastName: "",
             isFriendly: true,
             gender: "",
-            favColor: ""
+            favColor: "",
+            details:""
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -43,7 +44,7 @@ class Forms extends React.Component{
                     onChange={this.handleChange}
                 />
                 <br />
-                    <textarea value={"default value"} />
+                    <textarea value={this.details} onChange={this.handleChange}/>
                     <input
                         type="checkbox"
                         name="isFriendly"

@@ -6,21 +6,21 @@ function FormFullContainer(props){
                                 <form>
                                     <input
                                         name="firstName"
-                                        value={props.firstName}
+                                        value={props.data.firstName}
                                         placeholder="firstName"
                                         onChange={props.handleChange}
                                         />
                                         <br />
                                     <input
                                         name="lastName"
-                                        value={props.lastName}
+                                        value={props.data.lastName}
                                         placeholder="lastName"
                                         onChange={props.handleChange}
                                         />
                                         <br />
                                     <input
                                         name="age"
-                                        value={props.age}
+                                        value={props.data.age}
                                         placeholder="age"
                                         onChange={props.handleChange}
                                         />
@@ -29,7 +29,7 @@ function FormFullContainer(props){
                                         type="radio"
                                         name="gender"
                                         value="Male"
-                                        checked={props.gender === "Male"}
+                                        checked={props.data.gender === "Male"}
                                         onChange={props.handleChange}
                                       />Male
                                      <br />
@@ -37,13 +37,13 @@ function FormFullContainer(props){
                                        type="radio"
                                        name="gender"
                                        value="Female"
-                                       checked={props.gender === "Female"}
+                                       checked={props.data.gender === "Female"}
                                        onChange={props.handleChange}
                                      />Female
                                     <br />
                                      <select
                                        name="destination"
-                                       value={props.destination}
+                                       value={props.data.destination}
                                        onChange={props.handleChange}
                                      >
                                            <option value="">---Please Choose your destination---</option>
@@ -58,21 +58,21 @@ function FormFullContainer(props){
                                                type="checkbox"
                                                name="isVegan"
                                                onChange={props.handleChange}
-                                               checked={props.isVegan}
+                                               checked={props.data.isVegan}
                                            /> Vegan
                                         <br />
                                         <input
                                                type="checkbox"
                                                name="isLactoseFree"
                                                onChange={props.handleChange}
-                                               checked={props.isLactoseFree}
+                                               checked={props.data.isLactoseFree}
                                         /> Lactose Free
                                          <br />
                                         <input
                                               type="checkbox"
                                               name="isKosher"
                                               onChange={props.handleChange}
-                                              checked={props.isKosher}
+                                              checked={props.data.isKosher}
                                         /> Kosher
                                      </label>
                                      <br />
@@ -80,15 +80,15 @@ function FormFullContainer(props){
                                 </form>
                                 <hr />
                                 <h2>External Information:</h2>
-                                <p>Your name: {props.firstName} {props.lastName}</p>
-                                <p>Your age: {props.age}</p>
-                                <p>Your gender: {props.gender}</p>
-                                <p>Your destination: {props.destination}</p>
+                                <p>Your name: {props.data.firstName} {props.data.lastName}</p>
+                                <p>Your age: {props.data.age}</p>
+                                <p>Your gender: {props.data.gender}</p>
+                                <p>Your destination: {props.data.destination}</p>
                                 <p>Dietary Restrictions:-
                                 <br/>-------------------------------------------<br/>
-                                 Vegan : {props.isVegan ? "Yes" : "No"}<br/>
-                                 Lactose Free : {props.isLactoseFree ? "Yes" : "No"}<br/>
-                                 Kosher : {props.isKosher ? "Yes" : "No"}
+                                 Vegan : {props.data.isVegan ? "Yes" : "No"}<br/>
+                                 Lactose Free : {props.data.isLactoseFree ? "Yes" : "No"}<br/>
+                                 Kosher : {props.data.isKosher ? "Yes" : "No"}
                                  </p>
                            </main>
         )
